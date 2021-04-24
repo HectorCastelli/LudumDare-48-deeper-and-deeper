@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/tiles/tileCube.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/tiles/tileStairs.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/tiles/tileEdge.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/tiles/tileWall.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/tiles/tileWallCorner.obj" type="ArrayMesh" id=5]
+
+[sub_resource type="ConcavePolygonShape" id=16]
+data = PoolVector3Array( -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1, 1, 1, 1, -1, 1, 1, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=21]
+data = PoolVector3Array( -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, 1, -1, 1, 1, -1, 1, -1, 1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( -1, 1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1, 1, -0.5, 1, 1, -1, 1, -1, -0.5, 1, -1, -0.5, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -0.5, 1, 1, -0.5, 1, -1, -1, 1, 0.5, -0.5, 1, 0.5, -0.5, 1, -1, -1, 1, 0.5, 0, 1, 0.5, 0, 1, -1, -1, 1, 0, 0, 1, 0, 0, 1, -1, -1, 1, 0, 0.5, 1, 0, 0.5, 1, -1, -1, 1, -0.5, 0.5, 1, -0.5, 0.5, 1, -1, -1, 1, -0.5, 1, 1, -0.5, 1, 1, -1, -1, 1, -1, 1, -1, -0.5, 0.5, 1, -0.5, 0.5, -1, -0.5, 1, -1, -0.5, 1, 1, -0.5, 0.5, 1, -0.5, 1, -1, 1, -1, 1, 1, -1, -1, 1, -0.5, -1, 1, -0.5, 1, 1, -1, 1, 1, -0.5, 1, 0, 0, -1, 0, 0, 1, 0.5, 0, 1, 0.5, 0, -1, 0, 0, -1, 0.5, 0, -1, -0.5, 1, -1, -1, 1, -1, -0.5, 0.5, -1, -0.5, 0.5, -1, -1, 1, -1, 0, 0.5, -1, 0, 0.5, -1, -1, 1, -1, 0, 0, -1, 0, 0, -1, -1, 1, -1, 0.5, 0, -1, 0.5, 0, -1, -1, 1, -1, 0.5, -0.5, -1, 0.5, -0.5, -1, -1, 1, -1, 1, -0.5, -1, 1, -0.5, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, 0, 0, 1, 0, 0, -1, 0, 0.5, -1, 0, 0.5, 1, 0, 0, 1, 0, 0.5, 1, -0.5, 0.5, -1, -0.5, 0.5, 1, 0, 0.5, 1, 0, 0.5, -1, -0.5, 0.5, -1, 0, 0.5, -1, 0.5, -0.5, 1, 0.5, -0.5, -1, 0.5, 0, -1, 0.5, 0, 1, 0.5, -0.5, 1, 0.5, 0, -1, 1, -0.5, 1, 1, -0.5, -1, 0.5, -0.5, -1, 0.5, -0.5, 1, 1, -0.5, 1, 0.5, -0.5 )
+
+[sub_resource type="ConcavePolygonShape" id=4]
+data = PoolVector3Array( -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, 1, -1, 1, 1, -1, 1, -1, 1, -1, -1, -1, -1, -1, 1, 0, -1, 0, 0, -1, 1, -1, -1, 1, -1, -1, 0, 0, -1, 0, -1, -1, 1, -1, -1, 0, -1, 1, 1, -1, 1, 1, -1, -1, 0, -1, 1, 0, -1, 1, -1, 0, -1, -1, 0, 1, -1, 1, 1, -1, 1, -1, -1, 0, -1, -1, 1, 1, 0, 1, -1, 0, 1, 1, 0, 0, 1, 0, 0, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, -1, 1, -1, 0, 1, -1, 0, 1, 1, -1, 1, -1, -1, 1, 1, 0, 0, 1, -1, 0, 1, 0, 1, 1, 0, 1, 1, -1, 0, 1, -1, 1, -1, 0, -1, -1, -1, -1, 1, 0, -1, 1, 0, -1, -1, -1, -1, 1, -1, -1, -1, 0, 0, -1, -1, 0, -1, 0, -1, -1, 0, -1, -1, -1, 0, -1, -1, -1, -1, 0, 1, -1, -1, 1, -1, 0, 0, -1, 0, 0, -1, -1, 1, -1, -1, 0, 1, 0, -1, 1, -1, -1, 1, 0, 0, 1, 0, 0, 1, -1, -1, 1, -1, 0, -1, 1, -1, 1, 1, -1, -1, 1, 0, -1, 1, 0, 1, 1, -1, 1, 1, 0, 1, -1, -1, -1, -1, -1, 1, -1, 0, 1, -1, 0, -1, -1, -1, -1, -1, 0, 1, 1, -1, 1, 0, -1, 1, 1, 0, 1, 1, 0, 1, 0, -1, 1, 0, 0, 1, 1, 0, 1, 0, 0, -1, 1, 0, -1, 1, 0, 1, 0, 0, -1, 0, 0, -1, 1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=5]
+data = PoolVector3Array( 1, 1, -1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1 )
+
+[node name="MeshLibrary" type="Spatial"]
+
+[node name="tileCube" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="tileCube"]
+
+[node name="CollisionShape" type="CollisionShape" parent="tileCube/StaticBody"]
+shape = SubResource( 16 )
+
+[node name="tileEdge" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="tileEdge"]
+
+[node name="CollisionShape" type="CollisionShape" parent="tileEdge/StaticBody"]
+shape = SubResource( 21 )
+
+[node name="tileStairs" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="tileStairs"]
+
+[node name="CollisionShape" type="CollisionShape" parent="tileStairs/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="tileWall" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="tileWall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="tileWall/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="tileWallCorner" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="tileWallCorner"]
+
+[node name="CollisionShape" type="CollisionShape" parent="tileWallCorner/StaticBody"]
+shape = SubResource( 5 )
