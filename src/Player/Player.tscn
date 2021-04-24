@@ -8,6 +8,7 @@
 
 [sub_resource type="SphereShape" id=1]
 margin = 0.05
+radius = 0.8
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 4 )
@@ -64,15 +65,14 @@ animations = [ {
 } ]
 
 [node name="Player" type="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 4 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835082, 0 )
 shape = SubResource( 1 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30613, 0 )
 light_color = Color( 0.0509804, 1, 0, 1 )
 light_energy = 0.7
 shadow_enabled = true
@@ -80,19 +80,19 @@ omni_range = 8.0
 omni_attenuation = 1.62451
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.835082, 0 )
 pixel_size = 0.1
 billboard = 2
+shaded = true
 frames = SubResource( 11 )
 animation = "idle"
-frame = 1
 playing = true
 
 [node name="CameraPivot" type="Spatial" parent="."]
 script = ExtResource( 2 )
 
 [node name="Camera" type="Camera" parent="CameraPivot"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36456, 0 )
 environment = ExtResource( 6 )
 current = true
 fov = 45.0

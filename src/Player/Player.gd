@@ -39,6 +39,7 @@ func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if try_jump and is_on_floor():
+		PlayerScores.analytics_jump()
 		velocity.y = JUMP_POWER
 	handle_animation()
 
