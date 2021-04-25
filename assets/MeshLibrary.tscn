@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/tiles/tileWallCorner.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://assets/tiles/NavMeshInstance.tres" type="NavigationMesh" id=6]
 
-[sub_resource type="ConcavePolygonShape" id=9]
+[sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1, 1, 1, 1, -1, 1, 1, 1 )
 
 [sub_resource type="ConcavePolygonShape" id=2]
@@ -31,7 +31,7 @@ material/0 = null
 [node name="StaticBody" type="StaticBody" parent="tileCube"]
 
 [node name="CollisionShape" type="CollisionShape" parent="tileCube/StaticBody"]
-shape = SubResource( 9 )
+shape = SubResource( 1 )
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="tileCube"]
 navmesh = ExtResource( 6 )

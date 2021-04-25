@@ -58,3 +58,16 @@ func choose_new_destination():
 		currentDestination = navigation.get_closest_point(targetPoint)
 		navPath = navigation.get_simple_path(self.global_transform.origin, currentDestination)
 	pass
+
+
+onready var hitTimer = $Area/HitTimer
+onready var hitArea = $Area
+
+func _on_Area_body_entered(body: Node) -> void:
+	PlayerScores.remove_health()
+	hitTimer.start()
+	hitArea.monitoring = false
+
+
+func _on_HitTimer_timeout() -> void:
+	hitArea.monitoring = true

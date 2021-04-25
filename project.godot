@@ -10,9 +10,11 @@ config_version=4
 
 [application]
 
-config/name="LD48-Deeper and Deeper"
-run/main_scene="res://src/TestScene.tscn"
-config/icon="res://icon.png"
+config/name="Hole Explorer"
+config/description="Hole Explorer by @ZektorH
+A #LD48 \"Deeper and Deeper\" game"
+run/main_scene="res://src/MainMenu.tscn"
+config/icon="res://assets/character-icon.png"
 
 [autoload]
 
@@ -92,6 +94,13 @@ strafe_left={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
  ]
 }
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+3d_physics/layer_3="enemies"
+3d_physics/layer_4="coins"
 
 [physics]
 
