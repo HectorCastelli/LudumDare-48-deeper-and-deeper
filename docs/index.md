@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Hole Explorer
 
-You can use the [editor on GitHub](https://github.com/HectorCastelli/LudumDare-48-deeper-and-deeper/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This is my submission for #LD48.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My initial idea was somewhat different from this, but after prototyping it did not feel good to play.
 
-### Markdown
+I had to switch from 3rd person view to 1st person, and that took more time than I expected, since the movement felt off.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For the sake of finishing the game, I opted out of procedural generation, and created a couple of levels (cave "levels", not actual levels) by hand. For a longer version of this, I would have liked to use procedural generation to make 100-ish level before any major encounter.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HectorCastelli/LudumDare-48-deeper-and-deeper/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Another feature that was cut was graplign and boss-fights. I wanted to have grapling as a main tool to traverse the levels and use it as a last-resort for situations where you fall off. I also wanted to have boss fights ever 30 or so levels so the player can have some challenge besides the platforming.
